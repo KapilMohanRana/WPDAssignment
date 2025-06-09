@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(181, 68, 213);
+}
+.header{
+    background-color: #2b1b72;
+    padding: 20px;
+    border: black 1.5px solid;
+    align-content: center;
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.navbar {
+    font-size: 18px;
+    display: block; 
+    white-space: nowrap; 
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+}
+a:hover {
+    color: rgb(187, 153, 153);
+}

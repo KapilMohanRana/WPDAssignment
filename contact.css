@@ -1,0 +1,53 @@
+.form {
+    padding: 10px;
+}
+.input {
+    margin: 10px 10px 5px 5px;
+    background-color: #dce3df;
+    border-radius: 4px;
+    height: 35px;
+    font-size: 15px;
+    padding: 8px;
+}
+.input:hover {
+    background-color: white;
+}
+textarea {
+    margin: 10px 10px 5px 5px;
+    background-color: #dce3df;
+    border-radius: 4px;
+    height: 35px;
+    font-size: 15px;
+    padding: 8px;
+}
+textarea:hover {
+    background-color: white;
+}
+label {
+    font-size: 20px;
+}
+.para {
+    display: flex;
+}
+.para label {
+    align-content: center;
+}
+#myfile {
+    padding-left: 5px;
+}
+.file {
+    margin: 10px 10px 5px 5px;
+}
+#btn {
+    padding: 8px 16px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #F4D947;
+    font-size: 15px;
+    color: black;
+    border: none;
+    border-radius: 4px;    
+}
+#btn:hover {
+    background-color: #EE8E13;
+}

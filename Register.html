@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reg.css">
+    <link rel="stylesheet" href="ind.css">
+</head>
+
+<body>
+    <div class="header">
+        <span class="navbar" id="home"><a href="index.html">Home</a></span>
+        <span class="navbar" id="about"><a href="about.html">About</a></span>
+        <span class="navbar" id="contact"><a href="contact.html">Contact</a></span>
+        <span class="navbar" id="services"><a href="services.html">Services</a></span>
+        <span class="navbar" id="register"><a href="Register.html">Register</a></span>
+    </div>
+    <h2 id="content">Registration Form</h2>
+    <div class="main">
+        <div class="sidebar">
+            <span class="step active" data-step="1" id="pDetails">Personal Details</span>
+            <span class="step" data-step="2" id="aDetails">Address Details</span>
+            <span class="step" data-step="3" id="cDetails">Contact Details</span>
+            <span class="step" data-step="4" id="pass">Password</span>
+        </div>
+        <div class="form">
+            <form action="login.php" method="post">
+                <div class="form-step active" data-step="1">
+                    <label for="name">Name:</label>
+                    <input type="text" placeholder="First Name" name="fName" required>
+                    <input type="text" placeholder="Middle Name" name="mName">
+                    <input type="text" placeholder="Last Name" name="lName" required>
+                    <br>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" name="dob" id="dob" required>
+                    <br>
+                    <button type="button" class="nxt-btn">Next</button>
+                </div>
+                <div class="form-step" data-step="2">
+                    <label for="address">Address:</label>
+                    <input type="text" placeholder="Street Address 1" name="address" required>
+                    <input type="text" placeholder="Street Address 2" name="address">
+                    <input type="text" placeholder="City" name="city" required>
+                    <input type="text" placeholder="State" name="state" required>
+                    <input type="text" placeholder="Zip Code" name="zip" required>
+                    <br>
+                    <button type="button" class="pre-btn">Previous</button>
+                    <button type="button" class="nxt-btn">Next</button>
+                </div>
+                <div class="form-step" data-step="3">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="abc@gmail.com" required>
+                    <br>
+                    <label for="phone">Phone: </label>
+                    <input type="text" name="cCode" id="cc" placeholder="+91" required>
+                    <input type="number" name="phone" id="phone" placeholder="9999999999" required>
+                    <br>
+                    <button type="button" class="pre-btn">Previous</button>
+                    <button type="button" class="nxt-btn">Next</button>
+                </div>
+                <div class="form-step" data-step="4">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="Abcd@1234" required>
+                    <br>
+                    <button type="button" class="pre-btn">Previous</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="reg.js"></script>
+</body>
+
+</html>
