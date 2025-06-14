@@ -1,38 +1,64 @@
 <!DOCTYPE html>
 <html lang="eng">
-    <head>
-        <title>Services</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="ind.css">
-        <link rel="stylesheet" href="contact.css">
-    </head>
-    <body>
-        <div class="header">
-            <span class="navbar" id="home"><a href="index.html">Home</a></span>
-            <span class="navbar" id="about"><a href="about.html">About</a></span>
-            <span class="navbar" id="contact"><a href="contact.html">Contact</a></span>
-            <span class="navbar" id="services"><a href="services.html">Services</a></span>
-            <span class="navbar" id="register"><a href="Register.html">Register</a></span>
+  <head>
+    <title>Services</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="ind.css" />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <div class="header">
+      <span class="navbar" id="barc"
+        ><a href="index.html"><img src="marvel_logo.png" alt="BARC" /></a
+      ></span>
+      <span class="navbar" id="home"><a href="index.html">Home</a></span>
+      <span class="navbar" id="about"><a href="about.html">About</a></span>
+      <span class="navbar" id="contact"
+        ><a href="contact.html">Contact</a></span
+      >
+      <span class="navbar" id="services"
+        ><a href="services.html">Services</a></span
+      >
+      <span class="navbar" id="register"
+        ><a href="Register.html">Register</a></span
+      >
+    </div>
+    <div class="form">
+      <form action="contact.php" method="post">
+        <label for="name">Name:</label>
+        <input
+          class="input"
+          type="text"
+          placeholder="full name"
+          name="name"
+          required
+        />
+        <br />
+        <label for="email">Email:</label>
+        <input
+          class="input"
+          type="email"
+          placeholder="abc@gmail.com"
+          name="email"
+          required
+        />
+        <br />
+        <div class="para">
+          <label for="query">Concern:</label>
+          <textarea
+            placehoder="Enter your query"
+            id="q"
+            rows="5"
+            cols="30"
+          ></textarea>
+          <br />
         </div>
-	<div class="form">
-	    <form action="contact.php" method="post">
-		<label for="name">Name:</label>
-		<input class="input" type="text" placeholder="full name" name="name" required>
-		<br>
-		<label for="email">Email:</label>
-		<input class="input" type="email" placeholder="abc@gmail.com" name="email" required>
-		<br>
-		<div class="para">
-		    <label for="query">Concern:</label>
-		    <textarea placehoder="Enter your query" id="q" rows="5" cols="30"></textarea>
-		    <br>
-		</div>
-		<div class="file">
-		    <label for="myfile">Select a file:</label>
-		    <input type="file" id="myfile" name="myfile">
-		</div>
-		<button type="submit" id="btn" name="submit">Submit</button>
-	    </form>
-	</div>
-    </body>
+        <div class="file">
+          <label for="myfile">Select a file:</label>
+          <input type="file" id="myfile" name="myfile" />
+        </div>
+        <button type="submit" id="btn" name="submit">Submit</button>
+      </form>
+    </div>
+  </body>
 </html>

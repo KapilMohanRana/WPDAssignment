@@ -1,13 +1,21 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Avenir+Next:wght@600&display=swap'); */
+@font-face {
+  font-family: 'Marvel';
+  src: url('https://www.cufonfonts.com/download/font/marvel') format('woff2');
+}
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 body {
-    background-color: rgb(181, 68, 213);
+    /* background-color: rgb(181, 68, 213); */
+    background-color: #221f1f;
+    /* font-family: 'Avenir Next', sans-serif; */
 }
 .header{
-    background-color: #2b1b72;
+    /* background-color: #2b1b72; */
+    background-color: #ED1D23;
     padding: 20px;
     border: black 1.5px solid;
     align-content: center;
@@ -17,15 +25,53 @@ body {
     gap: 20px;
 }
 .navbar {
-    font-size: 18px;
+    font-size: 22px;
     display: block; 
     white-space: nowrap; 
+    align-content: center;
 }
 .navbar a {
-    color: white;
+    color: #FEF200;
     text-decoration: none;
     background-color: transparent;
+    /* transition: transform 4ms ease; */
+}
+.header img {
+    height: 30px;
+    width: 80px;
+    /* background-color: black; */
 }
 a:hover {
     color: rgb(187, 153, 153);
+    /* transform: rotate(5deg); */
+}
+.super_heroes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    /* justify-content: center; */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.super-heroes img:nth-child(n+4) {
+  grid-column: span 1.5; /* Each spans 2 columns (so 2 images fit in 3-column grid) */
+}
+@media (max-width: 900px) {
+  .super-heroes {
+    grid-template-columns: 1fr; /* 2 columns on mobile */
+  }
+  .super-heroes img:nth-child(n+4) {
+    grid-column: span 1; /* Reset for mobile */
+  }
+}
+.super_heroes img {
+    height: 500px;
+    width: 350px;
+    /* padding: 15px; */
+}
+.super-heroes div {
+  align-content: center;
+  height: 500px;
+    width: 350px;
 }

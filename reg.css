@@ -28,6 +28,7 @@ a:hover {
 }
 #content {
     margin: 15px;
+    color: #FEF200;
 }
 .main{
     display: flex;
@@ -50,9 +51,14 @@ a:hover {
     transition: all 0.3s ease;
     margin-left: 30px;
 }
+.fulladd {
+    display: flex;
+    align-items: center;
+}
 .sidebar span.active {
     background-color: #555418;
     color:white;
+    transform: scale(1.06);
 }
 .form-step {
     display: none;
@@ -62,6 +68,7 @@ a:hover {
 }
 .form-step label {
     font-size: 20px;
+    color: #FEF200;
 }
 .form-step.active{
     display: block;
@@ -73,9 +80,11 @@ input {
     height: 35px;
     font-size: 15px;
     padding: 8px;
+    transition: transform 0.2s ease;
 }
 input:hover {
     background-color: white;
+    transform: scale(1.06);
 }
 #cc {
     width: 50px;
@@ -89,9 +98,11 @@ button{
     color: black;
     border: none;
     border-radius: 4px;
+    transition: transform 0.4s ease;
 }
 button:hover {
     background-color: #EE8E13;
+    transform: scale(1.1);
 }
 .pre-btn {
     background-color: #F4D947;
