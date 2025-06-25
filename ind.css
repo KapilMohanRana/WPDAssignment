@@ -8,6 +8,10 @@
     margin: 0;
     padding: 0;
 }
+.logo .op {
+  cursor: pointer;
+  display: none;
+}
 body {
     /* background-color: rgb(181, 68, 213); */
     background-color: #221f1f;
@@ -23,6 +27,26 @@ body {
     width: 100%;
     display: flex;
     gap: 20px;
+}
+@media (max-width: 650px) {
+  .logo {
+    display: block;
+    background-color: yellow;
+  }
+  .logo img {
+    height: 65px;
+    width: 65px;
+  }
+  .logo span {
+    display: none;
+  }
+  .logo .active {
+    display: inline-block;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .navbar {
     font-size: 22px;
@@ -41,8 +65,8 @@ body {
     width: 80px;
     /* background-color: black; */
 }
-a:hover {
-    color: rgb(187, 153, 153);
+.header a:hover {
+    color: rgb(105, 16, 213);
     /* transform: rotate(5deg); */
 }
 .super_heroes {
@@ -54,14 +78,14 @@ a:hover {
     max-width: 1200px;
     margin: 0 auto;
 }
-.super-heroes img:nth-child(n+4) {
+.super_heroes img:nth-child(n+4) {
   grid-column: span 1.5; /* Each spans 2 columns (so 2 images fit in 3-column grid) */
 }
 @media (max-width: 900px) {
-  .super-heroes {
+  .super_heroes {
     grid-template-columns: 1fr; /* 2 columns on mobile */
   }
-  .super-heroes img:nth-child(n+4) {
+  .super_heroes img:nth-child(n+4) {
     grid-column: span 1; /* Reset for mobile */
   }
 }
@@ -69,9 +93,24 @@ a:hover {
     height: 500px;
     width: 350px;
     /* padding: 15px; */
+    transition: transform 0.3s ease;
+    /* object-fit: cover; */
 }
-.super-heroes div {
+.super_heroes img:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+.super_heroes div {
   align-content: center;
   height: 500px;
-    width: 350px;
+  width: 350px;
+}
+.hero-info {
+  padding: 5px 10px;
+  color: rgb(245, 229, 4);
+  margin-top: 1rem;
+}
+hr {
+  margin-top: 1rem;
+  margin-bottom: 2.25rem;
 }

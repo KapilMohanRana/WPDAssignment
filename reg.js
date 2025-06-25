@@ -55,13 +55,28 @@ document.addEventListener('DOMContentLoaded', function () {
     // // Update active form step
     // formSteps.forEach(step => step.classList.remove('active'));
     // formSteps[stepNum - 1].classList.add('active');
+    // steps.forEach((step, index) => {
+    //     step.addEventListener('click', function () {
+    //         if (!this.classList.contains('active')) {
+    //             setActivestep(index);
+    //         }
+    //     })
+    // });
     steps.forEach((step, index) => {
         step.addEventListener('click', function () {
-            if (!this.classList.contains('active')) {
+            const currentStepIndex = Array.from(formSteps).findIndex(fs => fs.classList.contains('active'));
+
+            // Allow going backward without validation
+            if (index <= currentStepIndex) {
+                setActivestep(index);
+            } 
+            // Validate current step before allowing forward navigation
+            else if (index > currentStepIndex && validateStep(formSteps[currentStepIndex])) {
                 setActivestep(index);
             }
-        })
+        });
     });
+
 
     // Set active step function (handles both sidebar and form steps)
     function setActivestep(index) {

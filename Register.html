@@ -11,7 +11,8 @@
   <body>
     <div class="header">
       <span class="navbar" id="barc"
-        ><a href="index.html"><img src="marvel_logo.png" alt="BARC" /></a
+        ><a href="index.html"
+          ><img src="/logos/marvel_logo.png" alt="MARVEL" /></a
       ></span>
       <span class="navbar" id="home"><a href="index.html">Home</a></span>
       <span class="navbar" id="about"><a href="about.html">About</a></span>
@@ -25,94 +26,167 @@
         ><a href="Register.html">Register</a></span
       >
     </div>
-    <h2 id="content">Registration Form</h2>
-    <div class="main">
-      <div class="sidebar">
-        <span class="step active" data-step="1" id="pDetails"
-          >Personal Details</span
-        >
-        <span class="step" data-step="2" id="aDetails">Address Details</span>
-        <span class="step" data-step="3" id="cDetails">Contact Details</span>
-        <span class="step" data-step="4" id="pass">Password</span>
-      </div>
-      <div class="form">
-        <form action="login.php" method="post">
-          <div class="form-step active" data-step="1">
-            <label for="name">Name:</label>
-            <input type="text" placeholder="First Name" name="fName" required />
-            <input type="text" placeholder="Middle Name" name="mName" />
-            <input type="text" placeholder="Last Name" name="lName" required />
-            <br />
-            <label for="dob">Date of Birth:</label>
-            <input type="date" name="dob" id="dob" required />
-            <br />
-            <button type="button" class="nxt-btn">Next</button>
+    <div class="boddy">
+      <div class="all">
+        <h2 id="content">Registration Form</h2>
+        <div class="main">
+          <div class="sidebar">
+            <div class="in">
+              <span class="step active" data-step="1" id="pDetails">1</span>
+              <!-- <span>Personal Details</span> -->
+            </div>
+            <div class="in">
+              <span class="step" data-step="2" id="aDetails">2</span>
+              <!-- <span>Address Details</span> -->
+            </div>
+            <div class="in">
+              <span class="step" data-step="3" id="cDetails">3</span>
+              <!-- <span>Contact Details</span> -->
+            </div>
+            <div class="in">
+              <span class="step" data-step="4" id="pass">4</span>
+              <!-- <span>Password</span> -->
+            </div>
           </div>
-          <div class="form-step" data-step="2">
-            <div class="fulladd">
-              <span><label for="address">Address:</label></span>
-              <span
-                ><input
-                  type="text"
-                  placeholder="Street Address 1"
-                  name="address"
-                  required />
+          <div class="form">
+            <form action="login.php" method="post">
+              <div class="form-step active" data-step="1">
+                <span class="imp">*<label for="name">First Name</label></span
+                ><br />
                 <input
                   type="text"
-                  placeholder="Street Address 2"
-                  name="address" />
-                <input type="text" placeholder="City" name="city" required />
-                <input type="text" placeholder="State" name="state" required />
-                <input type="text" placeholder="Zip Code" name="zip" required
-              /></span>
-            </div>
-            <br />
-            <button type="button" class="pre-btn">Previous</button>
-            <button type="button" class="nxt-btn">Next</button>
+                  placeholder="First Name"
+                  name="fName"
+                  required
+                /><br />
+                <label for="name">Middle Name</label><br />
+                <input
+                  type="text"
+                  placeholder="Middle Name"
+                  name="mName"
+                /><br />
+                <span class="imp">*<label for="name">Last Name</label></span
+                ><br />
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  name="lName"
+                  required
+                />
+                <br />
+                <span class="imp">*<label for="dob">Date of Birth:</label></span
+                ><br />
+                <input type="date" name="dob" id="dob" required />
+                <br />
+                <span class="btn _1"
+                  ><button type="button" class="nxt-btn">Next</button></span
+                >
+              </div>
+              <div class="form-step" data-step="2">
+                <div class="fulladd">
+                  <span class="imp">*<label for="address">Address:</label></span
+                  ><br />
+                  <span class="add_text"
+                    ><input
+                      type="text"
+                      placeholder="Street Address 1"
+                      name="address"
+                      required />
+                    <input
+                      type="text"
+                      placeholder="Street Address 2"
+                      name="address" />
+                    <input
+                      type="text"
+                      placeholder="District"
+                      name="district"
+                      required />
+                    <input
+                      type="text"
+                      placeholder="City"
+                      name="city"
+                      required />
+                    <input
+                      type="text"
+                      placeholder="State"
+                      name="state"
+                      required />
+                    <input
+                      type="text"
+                      placeholder="Zip Code"
+                      name="zip"
+                      required
+                  /></span>
+                </div>
+                <br />
+                <span class="btn">
+                  <button type="button" class="pre-btn">Previous</button>
+                  <button type="button" class="nxt-btn">Next</button></span
+                >
+              </div>
+              <div class="form-step" data-step="3">
+                <span class="imp">*<label for="email">Email:</label></span
+                ><br />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="abc@gmail.com"
+                  required
+                />
+                <br />
+                <span class="imp">*<label for="phone">Phone: </label></span
+                ><br />
+                <span
+                  ><input
+                    type="text"
+                    name="cCode"
+                    id="cc"
+                    placeholder="+91"
+                    required />
+                  <input
+                    type="number"
+                    name="phone"
+                    id="phone"
+                    placeholder="9999999999"
+                    required
+                /></span>
+                <br />
+                <span class="btn">
+                  <button type="button" class="pre-btn">Previous</button>
+                  <button type="button" class="nxt-btn">Next</button></span
+                >
+              </div>
+              <div class="form-step" data-step="4">
+                <span class="imp">*<label for="password">Password:</label></span
+                ><br />
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Abcd@1234"
+                  required
+                />
+                <br />
+                <span class="imp"
+                  >*<label for="password">Repeat Password:</label></span
+                ><br />
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Abcd@1234"
+                  required
+                />
+                <br />
+                <span class="btn">
+                  <button type="button" class="pre-btn">Previous</button>
+                  <button type="submit">Submit</button></span
+                >
+              </div>
+            </form>
           </div>
-          <div class="form-step" data-step="3">
-            <label for="email">Email:</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="abc@gmail.com"
-              required
-            />
-            <br />
-            <label for="phone">Phone: </label>
-            <input
-              type="text"
-              name="cCode"
-              id="cc"
-              placeholder="+91"
-              required
-            />
-            <input
-              type="number"
-              name="phone"
-              id="phone"
-              placeholder="9999999999"
-              required
-            />
-            <br />
-            <button type="button" class="pre-btn">Previous</button>
-            <button type="button" class="nxt-btn">Next</button>
-          </div>
-          <div class="form-step" data-step="4">
-            <label for="password">Password:</label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Abcd@1234"
-              required
-            />
-            <br />
-            <button type="button" class="pre-btn">Previous</button>
-            <button type="submit">Submit</button>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
     <script src="reg.js"></script>

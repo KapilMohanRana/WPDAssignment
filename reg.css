@@ -30,9 +30,27 @@ a:hover {
     margin: 15px;
     color: #FEF200;
 }
+.boddy {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    border: 1px solid white;
+    width: 500px;
+    box-shadow: 0px 0px 20px rgba(255,255,255,0.5);
+}
 .main{
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    /* gap: 20px; */
+    width: 100%;
 }
 .form{
     flex: 3;
@@ -40,25 +58,29 @@ a:hover {
 .sidebar{
     flex: 1;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    /* gap: 10px; */
+    justify-content: space-between;
+    margin: 0 20px;
+    /* align-items: center; */
 }
-.sidebar span{
-    border-radius: 5px;
-    padding: 10px;
+.sidebar .step{
+    border-radius: 50%;
     cursor: pointer;
     background-color: #ead289;
-    transition: all 0.3s ease;
-    margin-left: 30px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
 }
 .fulladd {
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 .sidebar span.active {
-    background-color: #555418;
+    background-color: #7c7a0f;
     color:white;
-    transform: scale(1.06);
 }
 .form-step {
     display: none;
@@ -69,9 +91,11 @@ a:hover {
 .form-step label {
     font-size: 20px;
     color: #FEF200;
+    /* text-shadow: 0 0 20px rgba(255, 0, 0, 1); */
 }
 .form-step.active{
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 input {
     margin: 10px 10px 5px 5px;
@@ -92,6 +116,8 @@ input:hover {
 button{
     padding: 8px 16px;
     margin: 5px;
+    width: 50%;
+    height: 50%;
     cursor: pointer;
     background-color: #F4D947;
     font-size: 15px;
@@ -99,14 +125,27 @@ button{
     border: none;
     border-radius: 4px;
     transition: transform 0.4s ease;
+    /* transform-style: preserve-3d; */
+}
+.imp {
+    color: red;
+}
+.btn {
+    display: flex;
+    justify-content: flex-end;
 }
 button:hover {
     background-color: #EE8E13;
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 .pre-btn {
     background-color: #F4D947;
 }
 .prev-btn:hover {
     background-color: #d32f2f;
+}
+.add_text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
 }
