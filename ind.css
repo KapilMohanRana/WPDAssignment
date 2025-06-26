@@ -8,10 +8,10 @@
     margin: 0;
     padding: 0;
 }
-.logo .op {
+/* .logo .op {
   cursor: pointer;
   display: none;
-}
+} */
 body {
     /* background-color: rgb(181, 68, 213); */
     background-color: #221f1f;
@@ -29,7 +29,7 @@ body {
     gap: 20px;
 }
 @media (max-width: 650px) {
-  .logo {
+  /* .logo {
     display: block;
     background-color: yellow;
   }
@@ -42,7 +42,7 @@ body {
   }
   .logo .active {
     display: inline-block;
-  }
+  } */
   .header {
     display: flex;
     flex-direction: column;
